@@ -10,7 +10,7 @@ Dự án tích hợp các công nghệ như FaceNet cho nhận diện khuôn m�
 
 - **Phát hiện khuôn mặt thời gian thực**: Sử dụng Google ML Kit để xác định vị trí khuôn mặt từ camera.
 - **Nhận diện danh tính**: Áp dụng mô hình FaceNet đã được huấn luyện để so sánh và xác định danh tính sinh viên.
-- **Ghi nhận điểm danh**: Lưu thông tin điểm danh vào cơ sở dữ liệu cục bộ hoặc đám mây.
+- **Ghi nhận điểm danh**: Lưu thông tin điểm danh vào cơ sở dữ liệu cục bộ.
 - **Tối ưu hóa hiệu suất**: Sử dụng TensorFlow Lite để đảm bảo ứng dụng chạy mượt mà trên thiết bị có cấu hình thấp.
 
 ## Yêu cầu hệ thống
@@ -23,7 +23,7 @@ Dự án tích hợp các công nghệ như FaceNet cho nhận diện khuôn m�
 - **Thư viện phụ thuộc**:
   - Google ML Kit SDK.
   - TensorFlow Lite.
-  - OpenCV (tùy chọn, để xử lý ảnh nâng cao).
+  - OpenCV.
 
 ## Hướng dẫn cài đặt
 

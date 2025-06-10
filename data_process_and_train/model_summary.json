@@ -1,0 +1,91 @@
+{
+    "layers": [
+        {
+            "name": "conv2d",
+            "type": "Conv2D",
+            "output_shape": "(None, 222, 222, 64)",
+            "params": 1792,
+            "filters": 64,
+            "kernel_size": [
+                3,
+                3
+            ],
+            "activation": "relu"
+        },
+        {
+            "name": "max_pooling2d",
+            "type": "MaxPooling2D",
+            "output_shape": "(None, 111, 111, 64)",
+            "params": 0,
+            "pool_size": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "conv2d_1",
+            "type": "Conv2D",
+            "output_shape": "(None, 109, 109, 128)",
+            "params": 73856,
+            "filters": 128,
+            "kernel_size": [
+                3,
+                3
+            ],
+            "activation": "relu"
+        },
+        {
+            "name": "max_pooling2d_1",
+            "type": "MaxPooling2D",
+            "output_shape": "(None, 54, 54, 128)",
+            "params": 0,
+            "pool_size": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "conv2d_2",
+            "type": "Conv2D",
+            "output_shape": "(None, 52, 52, 256)",
+            "params": 295168,
+            "filters": 256,
+            "kernel_size": [
+                3,
+                3
+            ],
+            "activation": "relu"
+        },
+        {
+            "name": "max_pooling2d_2",
+            "type": "MaxPooling2D",
+            "output_shape": "(None, 26, 26, 256)",
+            "params": 0,
+            "pool_size": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "flatten",
+            "type": "Flatten",
+            "output_shape": "(None, 173056)",
+            "params": 0
+        },
+        {
+            "name": "dense",
+            "type": "Dense",
+            "output_shape": "(None, 128)",
+            "params": 22151296,
+            "units": 128,
+            "activation": "linear"
+        },
+        {
+            "name": "lambda",
+            "type": "Lambda",
+            "output_shape": "(None, 128)",
+            "params": 0
+        }
+    ],
+    "total_params": 22522112
+}
